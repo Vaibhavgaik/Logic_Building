@@ -1,0 +1,34 @@
+package ARRAYS;//not giving specified output
+
+import java.util.Scanner;
+
+public class Ascending_Order
+{
+    public static void main(String[]args)
+    {
+        int temp=0;
+        System.out.println("Enter the array element");
+        Scanner sc=new Scanner(System.in);
+        int a[]=new int[5];
+        for(int i=0;i<5;i++)
+        {
+            a[i]=sc.nextInt();
+        }
+        for(int i=0;i<a.length;i++)
+        {
+            for(int j=i+1;j<a.length;j++)
+            {
+                if(a[i]>a[j])
+                {
+                    temp = a[i];
+                    a[i] = a[j];
+                    a[j] = temp;
+                }
+            }
+        }
+        for(int i=0;i<2;i++)
+        {
+            System.out.println(a[1]+" ");
+        }
+    }
+}
