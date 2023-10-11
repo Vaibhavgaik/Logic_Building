@@ -1,3 +1,4 @@
+//Adding Element by position
 package ARRAYS;
 import java.util.Scanner;
 public class add_ele_by_pos
